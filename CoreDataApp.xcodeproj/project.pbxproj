@@ -15,6 +15,7 @@
 		F4C393871F6AA87500E8E783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C393851F6AA87500E8E783 /* LaunchScreen.storyboard */; };
 		F4C393921F6AA87500E8E783 /* CoreDataAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C393911F6AA87500E8E783 /* CoreDataAppTests.swift */; };
 		F4C3939D1F6AA87500E8E783 /* CoreDataAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3939C1F6AA87500E8E783 /* CoreDataAppUITests.swift */; };
+		F4C393AB1F6AA96B00E8E783 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C393AA1F6AA96B00E8E783 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F4C393981F6AA87500E8E783 /* CoreDataAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C3939C1F6AA87500E8E783 /* CoreDataAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataAppUITests.swift; sourceTree = "<group>"; };
 		F4C3939E1F6AA87500E8E783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C393AA1F6AA96B00E8E783 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				F4C393851F6AA87500E8E783 /* LaunchScreen.storyboard */,
 				F4C393881F6AA87500E8E783 /* Info.plist */,
 				F4C393801F6AA87500E8E783 /* CoreDataApp.xcdatamodeld */,
+				F4C393AA1F6AA96B00E8E783 /* AddViewController.swift */,
 			);
 			path = CoreDataApp;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				F4C3937C1F6AA87500E8E783 /* ViewController.swift in Sources */,
 				F4C393821F6AA87500E8E783 /* CoreDataApp.xcdatamodeld in Sources */,
+				F4C393AB1F6AA96B00E8E783 /* AddViewController.swift in Sources */,
 				F4C3937A1F6AA87500E8E783 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +522,7 @@
 				F4C393A31F6AA87500E8E783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4C393A41F6AA87500E8E783 /* Build configuration list for PBXNativeTarget "CoreDataAppTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +531,7 @@
 				F4C393A61F6AA87500E8E783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4C393A71F6AA87500E8E783 /* Build configuration list for PBXNativeTarget "CoreDataAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +540,7 @@
 				F4C393A91F6AA87500E8E783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
