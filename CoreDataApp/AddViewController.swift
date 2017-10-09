@@ -31,12 +31,51 @@ class AddViewController: UIViewController {
         context.undoManager = UndoManager()
         context.undoManager?.levelsOfUndo = 3
         
-        
-        
-        
-        let task = Task(context: context)
-        task.cityActive=true
-        task.cityName=txtcityname.text
+        DispatchQueue.main.async {
+            
+            let newcontext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
+            newcontext.parent = context
+            
+            newcontext.perform {
+                
+                let task = Task(context: newcontext)
+                task.cityActive=true
+                task.cityName=self.txtcityname.text
+                
+                do {
+                    try newcontext.save()
+                    print("after saving into child context")
+                    self.getRecords()
+                    
+                    context.perform{
+                        do {
+                            try context.save()
+                            
+                            print("after saving into main context")
+                            self.getRecords()
+                            
+                        } catch{
+                            
+                        }
+                        
+                    }
+                    
+                } catch {
+                    
+                }
+                
+                
+                
+                
+            }
+            
+//
+            
+            
+            
+        }
+    /*
+      
         
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         print("before")
@@ -51,7 +90,8 @@ class AddViewController: UIViewController {
          (UIApplication.shared.delegate as! AppDelegate).saveContext()
         print("after redo")
       getRecords()
-
+*/
+        
      navigationController?.popViewController(animated: true)
 
     }
